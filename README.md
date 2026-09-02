@@ -38,7 +38,6 @@ The software is organized in three subfolders:
 
 ## Running the program
 
-After compilation, the executable program **main** is created in the folder *bin*, and to run a specific example, a folder related to the example needs to be created in *bin*, for instance, we create the folder *MyExample*. Then, the example folder needs to contain a file called **input.txt** which has a specific format for setting the parameters and flags of our example, described next. The example can be run at the bin folder as follows:
 
 ```console
 to do
