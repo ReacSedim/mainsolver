@@ -1,9 +1,7 @@
 
 <h1 style="color:teal;">Finite volume solver for Reactive Sedimentation</h1>
 
-
 This Github repository contains the source files of a solver written in Matlab tailored to approximate the reactive sedimentation up to order O(\Delta z^3) of accuracy in one spatial dimension. 
-
 
 To acknowledge the use of this software, we kindly ask you to cite the (current) paper:
 
@@ -13,7 +11,7 @@ J.D. Barajas, J. Careaga, L.M. Villada. **Invariant-region-preserving high-order
 
 
 
-The main structure of the code, including the makefile and a number of subroutines in this program were partially based on the paper
+The main structure of the code and a number of subroutines in this program were partially based on the paper
 **SDIMA_MOL**
 
 
@@ -50,7 +48,7 @@ to do
 ## Authorship
 
 
-This Matlab-based solver has been developed by **Julio Careaga** (https://github.com/juliocareaga/) and **Juan-David Barajas** (https://github.com/juandavidbarajasXXXXXXX/).
+This Matlab-based solver has been developed by **Julio Careaga** (https://github.com/juliocareaga/) and **Juan-David Barajas** (https://github.com/juandbarajascalogne/).
 
 
 
