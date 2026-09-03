@@ -32,6 +32,13 @@ The software is organized in three subfolders:
 
 ## Code structure
 
+Scripts in **scr** subfolder:
+- **rs_const_functions.m**: contains all constituve functions of the model
+- **rs_defaults.m**: fill in optional fields and compute derived constants
+- **rs_diffusive_flux.m**: compute the diffusive flux approximation operator...
+- **rs_ghost.m**: create ghost cells for computing boundary conditions
+- **rs_initial.m**: compute cell averages of the initial conditions
+- **rs_reconstruct.m**: compute second-order MUSCL and third-order CWENO reconstructions
 
 ## Running the program
 
