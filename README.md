@@ -6,7 +6,7 @@ This Github repository contains the source files of a solver written in Matlab t
 To acknowledge the use of this software, we kindly ask you to cite the (current) paper:
 
 $\color{blue}\texttt{(Current version)}$
-J.D. Barajas, J. Careaga, L.M. Villada. **Invariant-region-preserving high-order schemes for a model of reactive sedimentation**, 
+J. Barajas-Calonge, J. Careaga, L.M. Villada. **Invariant-region-preserving high-order schemes for a model of reactive sedimentation**, 
 *arXiv preprint arXiv:XXXX.XXXXX*, 2026, https://doi.org/XXXXXXXXXXX
 
 
