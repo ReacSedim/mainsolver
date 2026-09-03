@@ -46,7 +46,7 @@ to do
 
 ## Authorship
 
-This Matlab-based solver has been developed by **Julio Careaga** (https://github.com/juliocareaga/) and **Juan-David Barajas-Calogne** (https://github.com/juanbarajascalogne/).
+This Matlab-based solver has been developed by **Julio Careaga** (https://github.com/juliocareaga/) and **Juan-David Barajas-Calogne** (https://github.com/juanbarajascalonge/).
 
 
 
