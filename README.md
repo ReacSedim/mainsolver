@@ -56,9 +56,9 @@ $$
 \end{aligned}
 $$
 
-where 
-$`X_{\rm OHO}`$ is the concentration of heterotrophic organics<br>
-$`X_{\rm U}`$ is the concentration of undegradable matter<br>
+where <br>
+$`\color{purple}X_{\rm OHO}`$ is the concentration of heterotrophic organics<br>
+$`\color{teal!80!blue}X_{\rm U}`$ is the concentration of undegradable matter<br>
 $`S_{\rm NO3}`$ is the concentration of nitrate substrate<br>
 $`S_{\rm S}`$ is the concentration of readily biodegradable substrate<br>
 $`S_{\rm N2}`$ is the concentration of nitrogen substrate
