@@ -16,29 +16,28 @@ The benchmark partial differential equation (PDE), in the one-dimensional case, 
 
 $$
 \begin{aligned}
-&\dfrac{\partial u}{\partial t}
-+ \dfrac{\partial}{\partial z}\Big(
-\big(q(z,t) + \gamma(z)\bigl(\vhs(u) - \partial_z \mathcal{B}(u)\bigr)u
-\big)
-\Big)
+\frac{\partial u}{\partial t}
+&+ \frac{\partial}{\partial z}
+\left[
+\left(q(z,t)+\gamma(z)\left(v_{\rm hs}(u)-\partial_z\mathcal{B}(u)\right)\right)u
+\right]
 = b_u(\boldsymbol{c},\boldsymbol{s},z,t),
-\\[0.5em]
-&\dfrac{\partial \boldsymbol{c}}{\partial t}
-+ \dfrac{\partial}{\partial z}\Big(
-\big(q(z,t) + \gamma(z)\bigl(\vhs(u) - \partial_z \mathcal{B}(u)\bigr)\big)
+\\
+\frac{\partial \boldsymbol{c}}{\partial t}
+&+ \frac{\partial}{\partial z}
+\left[
+\left(q(z,t)+\gamma(z)\left(v_{\rm hs}(u)-\partial_z\mathcal{B}(u)\right)\right)
 \boldsymbol{c}
-\Big)
+\right]
 = \boldsymbol{b}_{\boldsymbol{c}}(\boldsymbol{c},\boldsymbol{s},z,t),
-\\[0.5em]
-&\dfrac{\partial \boldsymbol{s}}{\partial t}
-+ \dfrac{\partial}{\partial z}\left(
-\left(
-q(z,t)
-- \gamma(z)
-\dfrac{(v_{\rm hs}(u) - \partial_z\mathcal{B}(u))u}{\rho-u}
-\right)
+\\
+\frac{\partial \boldsymbol{s}}{\partial t}
+&+ \frac{\partial}{\partial z}
+\left[
+\left(q(z,t)-\gamma(z)
+\frac{\left(v_{\rm hs}(u)-\partial_z\mathcal{B}(u)\right)u}{\rho-u}\right)
 \boldsymbol{s}
-\right)
+\right]
 = \boldsymbol{b}_{\boldsymbol{s}}(\boldsymbol{c},\boldsymbol{s},z,t).
 \end{aligned}
 $$
