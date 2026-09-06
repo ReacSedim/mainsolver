@@ -46,6 +46,9 @@ $$
 \end{aligned}
 $$
 
+where $`\boldsymbol{c} = (c_1,c_2,...,c_{n_{\boldsymbol{c}}})`$ is the vector of solid components, $`\boldsymbol{s} = (s_1,s_2,...,s_{n_{\boldsymbol{s}}})`$ is the vector substrates, and $`u`$ is the total concentration of solids.
+
+
 The numerical scheme employed to solve the PDE combines a variety of ingredients:
 - High-order time approximations for ....
 - High-order polynomial reconstructions and maximum-principle limiters.
