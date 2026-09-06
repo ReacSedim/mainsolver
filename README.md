@@ -57,10 +57,10 @@ $$
 $$
 
 where 
-$`X_{\rm OHO}`$ is the concentration of heterotrophic organics
-$`X_{\rm U}`$ is the concentration of undegradable matter
-$`S_{\rm NO3}`$ is the concentration of nitrate substrate
-$`S_{\rm S}`$ is the concentration of readily biodegradable substrate
+$`X_{\rm OHO}`$ is the concentration of heterotrophic organics\n
+$`X_{\rm U}`$ is the concentration of undegradable matter\n
+$`S_{\rm NO3}`$ is the concentration of nitrate substrate\n
+$`S_{\rm S}`$ is the concentration of readily biodegradable substrate\n
 $`S_{\rm N2}`$ is the concentration of nitrogen substrate
 
 
