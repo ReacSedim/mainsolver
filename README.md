@@ -1,7 +1,7 @@
 
 <h1 style="color:teal;">Finite volume solver for Reactive Sedimentation</h1>
 
-This Github repository contains the source files of a solver written in Matlab designed to approximate the reactive sedimentation model (in one spatial dimension) from [Bürger, Careaga & Diehl (2021)]{https://academic.oup.com/imamat/article-abstract/86/3/514/6278612?redirectedFrom=fulltext}, with first, second or third order of accuracy. 
+This Github repository contains the source files of a solver written in Matlab designed to approximate the reactive sedimentation model (in one spatial dimension) from [Bürger, Careaga & Diehl (2021)](https://academic.oup.com/imamat/article-abstract/86/3/514/6278612?redirectedFrom=fulltext), with first, second or third order of accuracy. 
 
 You are welcome to use this software, to elaborate further simulation tests and to extend and implement the reaction terms to include more general activated sludge models such as the ASM1. However, we kindly ask you to to acknowledge the use of this software by citing the (current) paper:
 
