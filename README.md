@@ -15,7 +15,7 @@ J. Barajas-Calonge, J. Careaga, L.M. Villada. **Invariant-region-preserving high
 
 ### Model equations
 
-The benchmark partial differential equation (PDE), in the one-dimensional case,  solved by this software is the following first-order system of $`n`$ equations:
+The benchmark partial differential equation (PDE), in the one-dimensional case,  solved by this software is the following first-order system of $`n_{\boldsymbol{c}}+n_{\boldsymbol{s}}+1`$ equations:
 
 
 $$
