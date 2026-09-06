@@ -1,18 +1,15 @@
 
 <h1 style="color:teal;">Finite volume solver for Reactive Sedimentation</h1>
 
-This Github repository contains the source files of a solver written in Matlab tailored to approximate the reactive sedimentation up to order $`\mathcal{O}(\Delta z^3)`$ of accuracy in one spatial dimension. 
+This Github repository contains the source files of a solver written in Matlab designed to approximate the reactive sedimentation model (in one spatial dimension) from [Bürger, Careaga & Diehl (2021)]{https://academic.oup.com/imamat/article-abstract/86/3/514/6278612?redirectedFrom=fulltext}, with first, second or third order of accuracy. 
 
-To acknowledge the use of this software, we kindly ask you to cite the (current) paper:
+You are welcome to use this software, to elaborate further simulation tests and to extend and implement the reaction terms to include more general activated sludge models such as the ASM1. However, we kindly ask you to to acknowledge the use of this software by citing the (current) paper:
 
 $\color{blue}\texttt{(Current version)}$
 J. Barajas-Calonge, J. Careaga, L.M. Villada. **Invariant-region-preserving high-order schemes for a model of reactive sedimentation**, 
-*arXiv preprint arXiv:XXXX.XXXXX*, 2026, https://doi.org/XXXXXXXXXXX
+*arXiv preprint arXiv:To set*, 2026, https://doi.org/To-set
 
-
-The main structure of the code and a number of subroutines in this program were partially based on the paper
-**SDIMA_MOL**
-
+--------------------------
 
 The benchmark partial differential equation (PDE), in the one-dimensional case,  solved by this software is the following first-order system of $`n`$ equations:
 
