@@ -9,7 +9,11 @@ $\color{blue}\texttt{(Current version)}$
 J. Barajas-Calonge, J. Careaga, L.M. Villada. **Invariant-region-preserving high-order schemes for a model of reactive sedimentation**, 
 *arXiv preprint arXiv:To set*, 2026, https://doi.org/To-set
 
+
+
 --------------------------
+
+### Model equations
 
 The benchmark partial differential equation (PDE), in the one-dimensional case,  solved by this software is the following first-order system of $`n`$ equations:
 
