@@ -1,7 +1,7 @@
 
 <h1 style="color:teal;">Finite volume solver for Reactive Sedimentation</h1>
 
-This Github repository contains the source files of a solver written in Matlab designed to approximate the reactive sedimentation model (in one spatial dimension) from [Bürger, Careaga & Diehl (2021)](https://academic.oup.com/imamat/article-abstract/86/3/514/6278612?redirectedFrom=fulltext), with first, second or third order of accuracy. 
+This Github repository contains the source files of a finite volume solver written in Matlab designed to approximate the reactive sedimentation model (in one spatial dimension) from [Bürger, Careaga & Diehl (2021)](https://academic.oup.com/imamat/article-abstract/86/3/514/6278612?redirectedFrom=fulltext), with first, second or third order of accuracy in space and time. For the case of the second and third-order, MUSCL and central WENO reconstructions are implemented. 
 
 You are welcome to use this software, to elaborate further simulation tests and to extend and implement the reaction terms to include more general activated sludge models such as the ASM1. However, we kindly ask you to to acknowledge the use of this software by citing the (current) paper:
 
@@ -13,6 +13,35 @@ J. Barajas-Calonge, J. Careaga, L.M. Villada. **Invariant-region-preserving high
 
 The benchmark partial differential equation (PDE), in the one-dimensional case,  solved by this software is the following first-order system of $`n`$ equations:
 
+
+$$
+\begin{aligned}
+&\dfrac{\partial u}{\partial t}
++ \dfrac{\partial}{\partial z}\Big(
+\big(q(z,t) + \gamma(z)\bigl(\vhs(u) - \partial_z \mathcal{B}(u)\bigr)u
+\big)
+\Big)
+= b_u(\boldsymbol{c},\boldsymbol{s},z,t),
+\\[0.5em]
+&\dfrac{\partial \boldsymbol{c}}{\partial t}
++ \dfrac{\partial}{\partial z}\Big(
+\big(q(z,t) + \gamma(z)\bigl(\vhs(u) - \partial_z \mathcal{B}(u)\bigr)\big)
+\boldsymbol{c}
+\Big)
+= \boldsymbol{b}_{\boldsymbol{c}}(\boldsymbol{c},\boldsymbol{s},z,t),
+\\[0.5em]
+&\dfrac{\partial \boldsymbol{s}}{\partial t}
++ \dfrac{\partial}{\partial z}\left(
+\left(
+q(z,t)
+- \gamma(z)
+\dfrac{(v_{\rm hs}(u) - \partial_z\mathcal{B}(u))u}{\rho-u}
+\right)
+\boldsymbol{s}
+\right)
+= \boldsymbol{b}_{\boldsymbol{s}}(\boldsymbol{c},\boldsymbol{s},z,t).
+\end{aligned}
+$$
 
 The numerical scheme employed to solve the PDE combines a variety of ingredients:
 - High-order time approximations for ....
