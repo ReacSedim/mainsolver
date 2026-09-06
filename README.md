@@ -50,11 +50,18 @@ where $`\boldsymbol{c} = (c_1,c_2,...,c_{n_{\boldsymbol{c}}})`$ is the vector of
 
 $$
 \begin{aligned}
-\boldsymbol{c} &= (X_{\rm OHO},X_{\rm U})
+\boldsymbol{c} &= \left(X_{\rm OHO},X_{\rm U}\right)
 \\
-\boldsymbol{s} &= (S_{\rm N2},S_{\rm S},S_{\rm NO3})
+\boldsymbol{s} &= \left(S_{\rm N2},S_{\rm S},S_{\rm NO3}\right)
 \end{aligned}
 $$
+
+where 
+$`X_{\rm OHO}`$ is the concentration of heterotrophic organics
+$`X_{\rm U}`$ is the concentration of undegradable matter
+$`S_{\rm NO3}`$ is the concentration of nitrate substrate
+$`S_{\rm S}`$ is the concentration of readily biodegradable substrate
+$`S_{\rm N2}`$ is the concentration of nitrogen substrate
 
 
 The numerical scheme employed to solve the PDE combines a variety of ingredients:
