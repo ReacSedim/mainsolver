@@ -48,10 +48,10 @@ $$
 
 where $`\boldsymbol{c} = (c_1,c_2,...,c_{n_{\boldsymbol{c}}})`$ is the vector of solid components, $`\boldsymbol{s} = (s_1,s_2,...,s_{n_{\boldsymbol{s}}})`$ is the vector substrates, and $`u`$ is the total concentration of solids. In the default example implemented in this program, the activated sludge reduced biokinetic model, the vectors are:
 $$
-\begin{align}
+\begin{aligned}
 \boldsymbol{c} &= (X_{\rm OHO},X_{\rm U})\\
 \boldsymbol{s} &= (S_{\rm N2},S_{\rm S},S_{\rm NO3})
-\end{align}
+\end{aligned}
 $$
 
 
