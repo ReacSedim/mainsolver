@@ -7,8 +7,7 @@ You are welcome to use this software, to elaborate further simulation tests and 
 
 $\color{blue}\texttt{(Current version)}$
 J. Barajas-Calonge, J. Careaga, L.M. Villada. **Invariant-region-preserving high-order schemes for a model of reactive sedimentation**, 
-*arXiv preprint arXiv:To set*, 2026, https://doi.org/To-set
-
+*ArXiv preprint arXiv:2609.06846*, 2026, [https://arxiv.org/abs/2609.06846](https://arxiv.org/abs/2609.06846)
 
 
 --------------------------
