@@ -9,19 +9,6 @@ function [Jd,Ef] = rs_diffusive_flux(U,par,uL,uR,Vf)
 %   Face m (m = 1,...,N+1) is z_{j+1/2} with j = m-1, and cell j sits at array
 %   index j+2, so the four-point stencil is made of indices m,...,m+3.
 %
-%   PAR.diffScheme selects the approximation:
-%
-%     'none'   J = 0 
-%
-%     'c2'     Eq. (3.6).  Two-point central difference of D
-%
-%     'ho'     Eqs. (3.7)-(3.8).  Fourth-order staggered difference of D built on
-%              the auxiliary cell-centre values ubar_j = u_j - (u_{j+1}-2u_j+u_{j-1})/24
-%
-%
-%     'bhat'   Eq. (3.10).  
-%
-
  
     N = numel(U) - 4;  m = 1:N+1;
 

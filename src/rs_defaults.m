@@ -54,6 +54,13 @@ function par = rs_defaults(d)
     par.wlgl = [1/6, 2/3, 1/6];
     par.w1   = par.wlgl(1);
 
+    if par.feedMode == "batch"
+        par.tbreak  = [0];   % s
+        par.qf_val  = [0];   % m/s
+        par.qu_val  = [0];   % m/s
+        par.uf_val  = [0];   % u_f [kg/m^3]                
+    end 
+
     % ---- optional switches ---------------------------------------------
     par = setdef(par,'recon'     ,'cweno3');
     par = setdef(par,'rk'        ,'ssprk3');
