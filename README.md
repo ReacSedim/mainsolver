@@ -74,7 +74,7 @@ The numerical scheme employed to solve the PDE combines a variety of ingredients
 The software is organized in three subfolders:
 - **src**: Contains all the ".m" source codes, ...
 - **post-processing**: This is a repository where compressed auxiliary files ...
-- **examples**: 
+- **results**: 
 
 
 ## Code structure
