@@ -50,7 +50,7 @@ where $`\boldsymbol{c}`$ is the vector of $`{n_{\boldsymbol{c}}}`$ solid compone
 $$
 \begin{aligned}
 \boldsymbol{c} &= \left(X_{\rm OHO},X_{\rm U}\right)\qquad\text{and}\qquad
-\boldsymbol{s} &= \left(S_{\rm NO3},S_{\rm S},S_{\rm N2}\right)
+\boldsymbol{s} = \left(S_{\rm NO3},S_{\rm S},S_{\rm N2}\right)
 \end{aligned}
 $$
 
