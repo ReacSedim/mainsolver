@@ -3,7 +3,7 @@
 
 This Github repository contains the source files of a finite volume solver written in Matlab designed to approximate the reactive sedimentation model (in one spatial dimension) from [Bürger, Careaga & Diehl (2021)](https://academic.oup.com/imamat/article-abstract/86/3/514/6278612?redirectedFrom=fulltext), with first, second or third order of accuracy in space and time, respectively. For the case of the second and third-order, MUSCL and central WENO reconstructions are implemented. This model of reactive sedimentation is an extension to the so-called **Bürger-Diehl model** for secondary settling tanks in simulations of wastewater treatment processes.
 
-You are welcome to use this software, to elaborate further simulation tests and to extend and implement the reaction terms to include more general activated sludge models such as the ASM1. However, we kindly ask you to to acknowledge the use of this software by citing the (current) paper:
+This repository is intended to provide an open source solver for the simulation of reactive and non-reactive sedimentation processes, and also to offer a technical higher-order numerical scheme for specialists in applied mathematics. You are welcome to use this software, to elaborate further simulation tests and to extend and implement the reaction terms to include more general activated sludge models such as the ASM1. However, we kindly ask you to to acknowledge the use of this software by citing the (current) paper:
 
 $\color{blue}\texttt{(Current version)}$
 J. Barajas-Calonge, J. Careaga, L.M. Villada. **Invariant-region-preserving high-order schemes for a model of reactive sedimentation**, 
@@ -55,12 +55,12 @@ $$
 \end{aligned}
 $$
 
-where <br>
-$`\quad\color{#076D82}X_{\rm OHO}\text{ is the concentration of heterotrophic organics}`$<br>
-$`\quad\color{#076D82}X_{\rm U}\text{ is the concentration of undegradable matter}`$<br>
-$`\quad\color{#822E07}S_{\rm NO3}\text{ is the concentration of nitrate substrate}`$<br>
-$`\quad\color{#822E07}S_{\rm S}\text{ is the concentration of readily biodegradable substrate}`$<br>
-$`\quad\color{#822E07}S_{\rm N2}\text{ is the concentration of nitrogen substrate}`$
+where by components, we have: <br>
+$`\quad\color{#076D82}X_{\rm OHO}\text{ is the concentration of heterotrophic organics}`$,<br>
+$`\quad\color{#076D82}X_{\rm U}\text{ is the concentration of undegradable matter}`$,<br>
+$`\quad\color{#822E07}S_{\rm NO3}\text{ is the concentration of nitrate substrate}`$,<br>
+$`\quad\color{#822E07}S_{\rm S}\text{ is the concentration of readily biodegradable substrate}`$,<br>
+$`\quad\color{#822E07}S_{\rm N2}\text{ is the concentration of nitrogen substrate}`$.
 
 
 The numerical scheme employed to solve the PDE combines a variety of ingredients:
