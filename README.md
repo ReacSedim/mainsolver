@@ -66,16 +66,16 @@ The numerical scheme employed to solve the PDE combines a variety of ingredients
 - High-order time approximations for ....
 - High-order polynomial reconstructions and maximum-principle limiters.
 
+## Code structure
 
 ### Repositories and organization
 
 The software is organized in three subfolders:
-- **src**: Contains all the ".m" source codes, ...
+- **src**: Contains all the ".m" source codes
 - **post-processing**: This is a repository where compressed auxiliary files ...
-- **results**: 
+- **results**: This folder is intended to store all the results obtained from running the simulations; therefore, it is initially empty. 
 
-
-## Code structure
+### Scripts
 
 Scripts in **scr** subfolder:
 - **rs_const_functions.m**: contains all constituve functions of the model
@@ -86,7 +86,6 @@ Scripts in **scr** subfolder:
 - **rs_reconstruct.m**: compute second-order MUSCL and third-order CWENO reconstructions
 
 ## Running the program
-
 
 ```console
 to do
