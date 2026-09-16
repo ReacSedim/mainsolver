@@ -26,16 +26,16 @@ $$
 \right]
 = b_u(\boldsymbol{c},\boldsymbol{s},z,t),
 \\
-\frac{\partial \boldsymbol{c}}{\partial t}
-&+ \frac{\partial}{\partial z}
+\color{#076D82}\frac{\partial \boldsymbol{c}}{\partial t}
+&\color{#076D82}+ \frac{\partial}{\partial z}
 \left[
 \left(q(z,t)+\gamma(z)\left(v_{\rm hs}(u)-\partial_z\mathcal{B}(u)\right)\right)
 \boldsymbol{c}
 \right]
 = \boldsymbol{b}_{\boldsymbol{c}}(\boldsymbol{c},\boldsymbol{s},z,t),
 \\
-\frac{\partial \boldsymbol{s}}{\partial t}
-&+ \frac{\partial}{\partial z}
+\color{#822E07}\frac{\partial \boldsymbol{s}}{\partial t}
+&\color{#822E07}+ \frac{\partial}{\partial z}
 \left[
 \left(q(z,t)-\gamma(z)
 \frac{\left(v_{\rm hs}(u)-\partial_z\mathcal{B}(u)\right)u}{\rho-u}\right)
