@@ -50,16 +50,16 @@ where $`\boldsymbol{c}`$ is the vector of $`{n_{\boldsymbol{c}}}`$ solid compone
 $$
 \begin{aligned}
 \boldsymbol{c} &= \left(X_{\rm OHO},X_{\rm U}\right)\qquad\text{and}\qquad
-\boldsymbol{s} = \left(S_{\rm NO3},S_{\rm S},S_{\rm N2}\right)
+\boldsymbol{s} = \left(S_{\rm NO3},S_{\rm S},S_{\rm N2}\right),
 \end{aligned}
 $$
 
-where by components, we have: <br>
-$`\quad\color{#076D82}X_{\rm OHO}\text{ is the concentration of heterotrophic organics}`$,<br>
-$`\quad\color{#076D82}X_{\rm U}\text{ is the concentration of undegradable matter}`$,<br>
-$`\quad\color{#822E07}S_{\rm NO3}\text{ is the concentration of nitrate substrate}`$,<br>
-$`\quad\color{#822E07}S_{\rm S}\text{ is the concentration of readily biodegradable substrate}`$,<br>
-$`\quad\color{#822E07}S_{\rm N2}\text{ is the concentration of nitrogen substrate}`$.
+where by components, we have: <br><br>
+$`\qquad\color{#076D82}X_{\rm OHO}\text{ is the concentration of heterotrophic organics}`$,<br>
+$`\qquad\color{#076D82}X_{\rm U}\text{ is the concentration of undegradable matter}`$,<br>
+$`\qquad\color{#822E07}S_{\rm NO3}\text{ is the concentration of nitrate substrate}`$,<br>
+$`\qquad\color{#822E07}S_{\rm S}\text{ is the concentration of readily biodegradable substrate}`$,<br>
+$`\qquad\color{#822E07}S_{\rm N2}\text{ is the concentration of nitrogen substrate}`$.
 
 
 The numerical scheme employed to solve the PDE combines a variety of ingredients:
