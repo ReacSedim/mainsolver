@@ -12,7 +12,7 @@ J. Barajas-Calonge, J. Careaga, L.M. Villada. **Invariant-region-preserving high
 
 --------------------------
 
-### 1. Model equations
+## 1. Model equations
 
 The benchmark partial differential equation (PDE), in the one-dimensional case,  solved by this software is the following first-order system of $`n_{\boldsymbol{c}}+n_{\boldsymbol{s}}+1`$ equations:
 
@@ -66,7 +66,8 @@ The numerical scheme employed to solve the PDE combines a variety of ingredients
 - High-order time approximations for ....
 - High-order polynomial reconstructions and maximum-principle limiters.
 
-## Code structure
+--------------------------
+## 2. Code structure
 
 ### Repositories and organization
 
@@ -95,7 +96,11 @@ SOL = main_solver(N,par)
 ```
 
 
-## Input data
+## 3. Authorship
+
+This Matlab-based solver has been developed by **Julio Careaga** (https://github.com/juliocareaga/) and **Juan Barajas-Calonge** (https://github.com/juanbarajascalonge/).
+--------------------------
+## Input data structure
 
 The input data is passed through a structure, which may contain the following fields:
 
@@ -145,6 +150,8 @@ The input data is passed through a structure, which may contain the following fi
 | par.dtRule   | type of time step dt: 'cfl' or 'speed'                       |
 | par.sameDt   | same rule (w_1 = 1/6) for all three reconstructions          |
 
+
+--------------------------
 ## Output data structure
 
 
@@ -177,9 +184,6 @@ The input data is passed through a structure, which may contain the following fi
 | sol.glob       | structure containing the max and min values of the variables           |
 
 
-## Authorship
-
-This Matlab-based solver has been developed by **Julio Careaga** (https://github.com/juliocareaga/) and **Juan Barajas-Calonge** (https://github.com/juanbarajascalonge/).
 
 
 
