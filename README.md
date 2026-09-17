@@ -162,7 +162,7 @@ If you already have the parameters loaded in, for instance, the structure 'par',
 cd src
 SOL = main_solver(N,par)
 ```
-|    |    |
+
 |--- |---    |
 | **SOL.N** | Number of cells |
 | **SOL.T** | ending time |
