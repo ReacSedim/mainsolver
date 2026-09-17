@@ -97,20 +97,13 @@ The input data is passed through a structure, which may contain the following fi
 | **par.rho**      | density of solids [kg/m^3]                                   |
 | **par.rhoL**     | density of liquid [kg/m^3]                                   |
 | **par.gg**       | gravity [m/s^2]                                              |
-|---               |---                                                           |
-| hindered-settling velocity                                                      |
-|---               |---                                                           |
 | **par.v0**       | hindered settling velocity at zero concentration [m/s]       |
 | **par.utilde**   | parameter used in the Diehl flux function [kg/m^3]           |
 | **par.eta**      | parameter used in the Diehl flux function [-]                |
 | **par.umax**     | maximum solids concentration [kg/m^3]                        |
-|---               |---                                                           |
-| compression function                                                            |
-|---               |---                                                           |
 | **par.beta**     | parameter used in the compression function [-]               |
 | **par.uc**       | critical concentration                                       |
 | **par.diffScheme** | approximation type of the diffusion/compression terms      |
-| denitrification kinetics                                                        |
 | **par.Y**        | yield constant in the reduced biokinetic model               |
 | **par.Ybar**     | additional yield constant in the reduced biokinetic model    |
 | **par.fp**       | portion that decays to non-degradable organics               |
@@ -120,19 +113,10 @@ The input data is passed through a structure, which may contain the following fi
 | **par.k2**       | saturation constant [kg/m^3]                                 |
 | **par.sigmac**   | stoichiometric matrix for the solid components [-]           |
 | **par.sigmas**   | stoichiometric matrix for the substrates       [-]           |
-|---               |---                                                           |
-| bulk flows: batch                                                               |
-|---               |---                                                           |
 | **par.feedMode** | batch or continuous                                          |
 | **par.cfrac**    | fraction of initial feed (taken constant; vector)            |
 | **par.sf_val**   | feed concentration of substrates (taken constant; vector)    |
-|---               |---                                                           |
-| numerical boundary conditions                                                   |
-|---               |---                                                           |
 | **par.bc**       |  'transmissive'; gamma == 1 at every face and ghost cells    |
-|---               |---                                                           |
-| initial condition                                                               |
-|---               |---                                                           |
 | **par.icType**   | type of initial condition: 'jump' or 'bump'                  |
 | **par.bumpP**    | power used in smooth initial condition                       |
 | **par.z0**       | z-value used in 'bump' [m]                                   |
@@ -141,9 +125,6 @@ The input data is passed through a structure, which may contain the following fi
 | **par.uhat**     | u-value used in 'bump' [kg/m^3]                              |
 | **par.sbar**     | s-value used in 'bump' [kg/m^3]                              |
 | **par.shat**     | s-value used in 'bump' [kg/m^3]                              |
-|---               |---                                                           |
-| numerical parameters                                                            |
-|---               |---                                                           |
 | **par.Tfinal**   | final simulation time                                        |
 | **par.CFL**      | CFL constant                                                 |
 | **par.alphaM**   | Muscl parameter                                              |
@@ -191,7 +172,6 @@ SOL = main_solver(N,par)
 | **SOL.C** | vector of solutions c, last time iteration, size nc×N |
 | **SOL.S** | vector of solutions s, last time iteration, size ns×N | 
 | **SOL.glob** | structure containing the max and min values of the variables |
-|--- |--- |
 
 ## Authorship
 
