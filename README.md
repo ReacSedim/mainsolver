@@ -87,7 +87,7 @@ There are currently 7 source codes in folder **scr**, these are the following:
 - **rs_initial.m**: computes cell averages of the initial conditions. New initial conditions for u, c and s need to be implemented in this routine.
 - **rs_reconstruct.m**: computes the second-order MUSCL and third-order CWENO reconstructions.
 
-## Running the program
+### Running the program
 
 If you already have the parameters loaded in, for instance, the structure 'par', and consider the number of cells N, then you run:
 ```matlab
