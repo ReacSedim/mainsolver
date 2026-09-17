@@ -90,7 +90,7 @@ There are currently 7 source codes in folder **scr**, these are the following:
 ## Running the program
 
 If you already have the parameters loaded in, for instance, the structure 'par', and consider the number of cells N, then you run:
-```console
+```matlab
 cd src
 SOL = main_solver(N,par)
 ```
