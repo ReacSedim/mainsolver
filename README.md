@@ -12,7 +12,7 @@ J. Barajas-Calonge, J. Careaga, L.M. Villada. **Invariant-region-preserving high
 Related paper, with first-order accurate numerical scheme:
 
 R. Bürger, J. Careaga and S. Diehl. **A method-of-lines formulation for a model of reactive settling in tanks with varying cross-sectional area**, 
-*IMA J. Appl. Math.* 86 (2021), 514-546. [https://academic.oup.com/imamat/article-abstract/86/3/514/6278612](https://academic.oup.com/imamat/article-abstract/86/3/514/6278612)
+*IMA J. Appl. Math.* 86 (2021), 514-546. [link](https://academic.oup.com/imamat/article-abstract/86/3/514/6278612)
  
 --------------------------
 
