@@ -95,11 +95,11 @@ cd src
 SOL = main_solver(N,par)
 ```
 
-
+--------------------------
 ## 3. Authorship
 
 This Matlab-based solver has been developed by **Julio Careaga** (https://github.com/juliocareaga/) and **Juan Barajas-Calonge** (https://github.com/juanbarajascalonge/).
---------------------------
+
 ## Input data structure
 
 The input data is passed through a structure, which may contain the following fields:
