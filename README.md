@@ -89,6 +89,8 @@ Scripts in **scr** subfolder:
 ## Input data
 
 The input data is passed through a structure, which may contain the following fields:
+
+| Field   |  Description  |
 |---               |---                                                           |
 | **par.HH**       | vessel height [m]                                            |
 | **par.BB**       | vessel depth  [m]                                            |
@@ -162,7 +164,7 @@ If you already have the parameters loaded in, for instance, the structure 'par',
 cd src
 SOL = main_solver(N,par)
 ```
-
+| Field   |  Description  |
 |--- |---    |
 | **SOL.N** | Number of cells |
 | **SOL.T** | ending time |
