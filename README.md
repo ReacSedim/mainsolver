@@ -55,11 +55,11 @@ $$
 $$
 
 where by components, we have:
-- $`\qquad\color{#076D82}X_{\rm OHO}\text{ is the concentration of heterotrophic organics}`$
-- $`\qquad\color{#076D82}X_{\rm U}\text{ is the concentration of undegradable matter}`$
-- $`\qquad\color{#822E07}S_{\rm NO3}\text{ is the concentration of nitrate substrate}`$
-- $`\qquad\color{#822E07}S_{\rm S}\text{ is the concentration of readily biodegradable substrate}`$
-- $`\qquad\color{#822E07}S_{\rm N2}\text{ is the concentration of nitrogen substrate}`$
+- $`\color{#076D82}X_{\rm OHO}\text{ is the concentration of heterotrophic organics}`$
+- $`\color{#076D82}X_{\rm U}\text{ is the concentration of undegradable matter}`$
+- $`\color{#822E07}S_{\rm NO3}\text{ is the concentration of nitrate substrate}`$
+- $`\color{#822E07}S_{\rm S}\text{ is the concentration of readily biodegradable substrate}`$
+- $`\color{#822E07}S_{\rm N2}\text{ is the concentration of nitrogen substrate}`$
 
 
 The numerical scheme employed to solve the PDE combines a variety of ingredients:
