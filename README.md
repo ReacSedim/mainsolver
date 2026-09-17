@@ -77,13 +77,22 @@ The software is organized in three subfolders:
 
 ### Scripts
 
-Scripts in **scr** subfolder:
-- **rs_const_functions.m**: contains all constituve functions of the model
-- **rs_defaults.m**: fill in optional fields and compute derived constants
-- **rs_diffusive_flux.m**: compute the diffusive flux approximation operator...
-- **rs_ghost.m**: create ghost cells for computing boundary conditions
-- **rs_initial.m**: compute cell averages of the initial conditions
-- **rs_reconstruct.m**: compute second-order MUSCL and third-order CWENO reconstructions
+There are currently 7 source codes in folder **scr**, these are the following:
+- **main_solver.m**: corresponds to the main source code of the solver, contains the time and spatial loops, calls all the other functions and routines and produces the output structure.
+- **rs_const_functions.m**: contains all constitutive functions of the model plus some additional functions used in the model.
+- **rs_defaults.m**: fill in optional and default fields in the parameters data structure and compute some derived constants. The input in this function is the parameters input data structure and the output is also a parameters input data structure. It is intended to be called before running the main_solver.
+- **rs_diffusive_flux.m**: computes the approximation of the diffusive flux.
+- **rs_ghost.m**: create ghost cells for computing boundary conditions in the extended stencil of the polynomial reconstructions.
+- **rs_initial.m**: computes cell averages of the initial conditions. New initial conditions for u, c and s need to be implemented in this routine.
+- **rs_reconstruct.m**: computes the second-order MUSCL and third-order CWENO reconstructions.
+
+## Running the program
+
+If you already have the parameters loaded in, for instance, the structure 'par', and consider the number of cells N, then you run:
+```console
+cd src
+SOL = main_solver(N,par)
+```
 
 
 ## Input data
@@ -136,14 +145,10 @@ The input data is passed through a structure, which may contain the following fi
 | par.dtRule   | type of time step dt: 'cfl' or 'speed'                       |
 | par.sameDt   | same rule (w_1 = 1/6) for all three reconstructions          |
 
-## Running the program
+## Output data structure
 
-If you already have the parameters loaded in, for instance, the structure 'par', and consider the number of cells N, then you run:
-```console
-cd src
-SOL = main_solver(N,par)
-```
-|<span style="color:red"> Field </span>   |  Description  |
+
+| Field  |  Description  |
 |:--- |:---    |
 | sol.N          | Number of cells                                                        |
 | sol.T          | ending time                                                            |
