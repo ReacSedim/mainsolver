@@ -98,6 +98,8 @@ If you already have the parameters loaded in, for instance, the structure 'par',
 ```matlab
 cd src
 % load the parameters in the structure par
+% set the number of spatial cells N
+
 par = rs_defaults(par);
 sol = main_solver(N,par);
 ```
