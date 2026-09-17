@@ -92,51 +92,49 @@ The input data is passed through a structure, which may contain the following fi
 
 | Field   |  Description  |
 |:---              |:---                                                          |
-| **par.HH**       | vessel height [m]                                            |
-| **par.BB**       | vessel depth  [m]                                            |
-| **par.rho**      | density of solids [kg/m^3]                                   |
-| **par.rhoL**     | density of liquid [kg/m^3]                                   |
-| **par.gg**       | gravity [m/s^2]                                              |
-| **par.v0**       | hindered settling velocity at zero concentration [m/s]       |
-| **par.utilde**   | parameter used in the Diehl flux function [kg/m^3]           |
-| **par.eta**      | parameter used in the Diehl flux function [-]                |
-| **par.umax**     | maximum solids concentration [kg/m^3]                        |
-| **par.beta**     | parameter used in the compression function [-]               |
-| **par.uc**       | critical concentration                                       |
-| **par.diffScheme** | approximation type of the diffusion/compression terms      |
-| **par.Y**        | yield constant in the reduced biokinetic model               |
-| **par.Ybar**     | additional yield constant in the reduced biokinetic model    |
-| **par.fp**       | portion that decays to non-degradable organics               |
-| **par.bdec**     | decay rate of heterotrophic organisms [1/s]                  |
-| **par.mumax**    | maximum growth rate [1/s]                                    |
-| **par.k1**       | saturation constant [kg/m^3]                                 |
-| **par.k2**       | saturation constant [kg/m^3]                                 |
-| **par.sigmac**   | stoichiometric matrix for the solid components [-]           |
-| **par.sigmas**   | stoichiometric matrix for the substrates       [-]           |
-| **par.feedMode** | batch or continuous                                          |
-| **par.cfrac**    | fraction of initial feed (taken constant; vector)            |
-| **par.sf_val**   | feed concentration of substrates (taken constant; vector)    |
-| **par.bc**       |  'transmissive'; gamma == 1 at every face and ghost cells    |
-| **par.icType**   | type of initial condition: 'jump' or 'bump'                  |
-| **par.bumpP**    | power used in smooth initial condition                       |
-| **par.z0**       | z-value used in 'bump' [m]                                   |
-| **par.Rm**       | radious used in 'bump' [m]                                   |
-| **par.ubar**     | u-value used in 'bump' [kg/m^3]                              |
-| **par.uhat**     | u-value used in 'bump' [kg/m^3]                              |
-| **par.sbar**     | s-value used in 'bump' [kg/m^3]                              |
-| **par.shat**     | s-value used in 'bump' [kg/m^3]                              |
-| **par.Tfinal**   | final simulation time                                        |
-| **par.CFL**      | CFL constant                                                 |
-| **par.alphaM**   | Muscl parameter                                              |
-| **par.wenoPower**| power used in the CWENO method, in the S_K factors           |
-| **par.posEps**   | epsilon used in the CWENO method, in the S_K factors         |
-| **par.useLim**   | Zhang-Shu limiter ('true' or 'false')                        |
-| **par.nsnap**    | number of evenly saved snapshots of the solution             |
-| **par.nmon**     | number of evenly saved min/max monitored values              |
-| **par.dtRule**   | type of time step dt: 'cfl' or 'speed'                       |
-| **par.sameDt**   | same rule (w_1 = 1/6) for all three reconstructions          |
-|---               |---                                                           |
-
+| par.HH       | vessel height [m]                                            |
+| par.BB       | vessel depth  [m]                                            |
+| par.rho      | density of solids [kg/m^3]                                   |
+| par.rhoL     | density of liquid [kg/m^3]                                   |
+| par.gg       | gravity [m/s^2]                                              |
+| par.v0       | hindered settling velocity at zero concentration [m/s]       |
+| par.utilde   | parameter used in the Diehl flux function [kg/m^3]           |
+| par.eta      | parameter used in the Diehl flux function [-]                |
+| par.umax     | maximum solids concentration [kg/m^3]                        |
+| par.beta     | parameter used in the compression function [-]               |
+| par.uc       | critical concentration                                       |
+| par.diffScheme | approximation type of the diffusion/compression terms      |
+| par.Y        | yield constant in the reduced biokinetic model               |
+| par.Ybar     | additional yield constant in the reduced biokinetic model    |
+| par.fp       | portion that decays to non-degradable organics               |
+| par.bdec     | decay rate of heterotrophic organisms [1/s]                  |
+| par.mumax    | maximum growth rate [1/s]                                    |
+| par.k1       | saturation constant [kg/m^3]                                 |
+| par.k2       | saturation constant [kg/m^3]                                 |
+| par.sigmac   | stoichiometric matrix for the solid components [-]           |
+| par.sigmas   | stoichiometric matrix for the substrates       [-]           |
+| par.feedMode | batch or continuous                                          |
+| par.cfrac    | fraction of initial feed (taken constant; vector)            |
+| par.sf_val   | feed concentration of substrates (taken constant; vector)    |
+| par.bc       |  'transmissive'; gamma == 1 at every face and ghost cells    |
+| par.icType   | type of initial condition: 'jump' or 'bump'                  |
+| par.bumpP    | power used in smooth initial condition                       |
+| par.z0       | z-value used in 'bump' [m]                                   |
+| par.Rm       | radious used in 'bump' [m]                                   |
+| par.ubar     | u-value used in 'bump' [kg/m^3]                              |
+| par.uhat     | u-value used in 'bump' [kg/m^3]                              |
+| par.sbar     | s-value used in 'bump' [kg/m^3]                              |
+| par.shat     | s-value used in 'bump' [kg/m^3]                              |
+| par.Tfinal   | final simulation time                                        |
+| par.CFL      | CFL constant                                                 |
+| par.alphaM   | Muscl parameter                                              |
+| par.wenoPower| power used in the CWENO method, in the S_K factors           |
+| par.posEps   | epsilon used in the CWENO method, in the S_K factors         |
+| par.useLim   | Zhang-Shu limiter ('true' or 'false')                        |
+| par.nsnap    | number of evenly saved snapshots of the solution             |
+| par.nmon     | number of evenly saved min/max monitored values              |
+| par.dtRule   | type of time step dt: 'cfl' or 'speed'                       |
+| par.sameDt   | same rule (w_1 = 1/6) for all three reconstructions          |
 
 ## Running the program
 
@@ -145,33 +143,33 @@ If you already have the parameters loaded in, for instance, the structure 'par',
 cd src
 SOL = main_solver(N,par)
 ```
-|<span style="color:red"> Field 1</span>   |  Description  |
+|<span style="color:red"> Field </span>   |  Description  |
 |:--- |:---    |
-| **sol.N**          | Number of cells                                                        |
-| **sol.T**          | ending time                                                            |
-| **sol.dt**         | time step                                                              |
-| **sol.nSteps**     | total number of time iterations                                        |
-| **sol.recon**      | reconstruction type: 'fo', 'muscl', 'cweno3'                           |
-| **sol.rk**         | time approximation: 'euler', 'ssprk2', 'ssprk3'                        |
-| **sol.useLim**     | Zhang & Shu limiter: 0 ('false'), 1 ('true')                           |
-| **sol.diffScheme** | diffusion approximation: 'none', d-method-2, d-method-4                |
-|                    |                                  b-method-2, b-method-4                |
-| **sol.umax**       | maximum solids concentration                                           |
-| **sol.z**          | mesh nodes in the z-coordinate                                         |
-| **sol.tsnap**      | time point snapshots                                                   |
-| **sol.usnap**      | saved snapshots of vector solution u, size nsnap×N                     |
-| **sol.csnap**      | saved snapshots of vector solution c, size nc×nsnap×N                  |
-| **sol.ssnap**      | saved snapshots of vector solution s, size ns×nsnap×N                  |
-| **sol.tw**         | monitored times for min/max values, size nmon                          |
-| **sol.minu**       | monitored min values of u, size nmon                                   |
-| **sol.maxu**       | monitored max values of u, size nmon                                   |
-| **sol.minc**       | monitored min values of c, size nmon                                   | 
-| **sol.mins**       | monitored min values of s, size nmon                                   |
-| **sol.sumc**       | monitored sum of c, size nmon                                          |
-| **sol.U**          | vector of solutions u, last time iteration, size 1×N                   |
-| **sol.C**          | vector of solutions c, last time iteration, size nc×N                  |
-| **sol.S**          | vector of solutions s, last time iteration, size ns×N                  | 
-| **sol.glob**       | structure containing the max and min values of the variables           |
+| sol.N          | Number of cells                                                        |
+| sol.T          | ending time                                                            |
+| sol.dt         | time step                                                              |
+| sol.nSteps     | total number of time iterations                                        |
+| sol.recon      | reconstruction type: 'fo', 'muscl', 'cweno3'                           |
+| sol.rk         | time approximation: 'euler', 'ssprk2', 'ssprk3'                        |
+| sol.useLim     | Zhang & Shu limiter: 0 ('false'), 1 ('true')                           |
+| sol.diffScheme | diffusion approximation: 'none', d-method-2, d-method-4                |
+|                    |                                  b-method-2, b-method-4            |
+| sol.umax       | maximum solids concentration                                           |
+| sol.z          | mesh nodes in the z-coordinate                                         |
+| sol.tsnap      | time point snapshots                                                   |
+| sol.usnap      | saved snapshots of vector solution u, size nsnap×N                     |
+| sol.csnap      | saved snapshots of vector solution c, size nc×nsnap×N                  |
+| sol.ssnap      | saved snapshots of vector solution s, size ns×nsnap×N                  |
+| sol.tw         | monitored times for min/max values, size nmon                          |
+| sol.minu       | monitored min values of u, size nmon                                   |
+| sol.maxu       | monitored max values of u, size nmon                                   |
+| sol.minc       | monitored min values of c, size nmon                                   | 
+| sol.mins       | monitored min values of s, size nmon                                   |
+| sol.sumc       | monitored sum of c, size nmon                                          |
+| sol.U          | vector of solutions u, last time iteration, size 1×N                   |
+| sol.C          | vector of solutions c, last time iteration, size nc×N                  |
+| sol.S          | vector of solutions s, last time iteration, size ns×N                  | 
+| sol.glob       | structure containing the max and min values of the variables           |
 
 
 ## Authorship
