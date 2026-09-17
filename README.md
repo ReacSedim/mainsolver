@@ -92,7 +92,9 @@ There are currently 7 source codes in folder **scr**, these are the following:
 If you already have the parameters loaded in, for instance, the structure 'par', and consider the number of cells N, then you run:
 ```matlab
 cd src
-SOL = main_solver(N,par)
+% load the parameters in the structure par
+par = rs_defaults(par);
+sol = main_solver(N,par);
 ```
 
 --------------------------
