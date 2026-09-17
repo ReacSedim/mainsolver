@@ -106,6 +106,7 @@ This Matlab-based solver has been developed by **Julio Careaga** (https://github
 <br>
 <br>
 <br>
+--------------------------
 
 ## 🔵 Input data structure
 
