@@ -107,7 +107,8 @@ This Matlab-based solver has been developed by **Julio Careaga** (https://github
 <br>
 <br>
 --------------------------
-## 🔵 Input data structure
+
+### 🔵 Input data structure
 
 The input data is passed through a structure, that we call here par, which may contain the following fields:
 
