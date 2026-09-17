@@ -163,33 +163,33 @@ cd src
 SOL = main_solver(N,par)
 ```
 
-|---                 |---                                                                     |
-| **SOL.N**          | Number of cells                                                        |
-| **SOL.T**          | ending time                                                            |
-| **SOL.dt**         | time step                                                              |
-| **SOL.nSteps**     | total number of time iterations                                        |
-| **SOL.recon**      | reconstruction type: 'fo', 'muscl', 'cweno3'                           |
-| **SOL.rk**         | time approximation: 'euler', 'ssprk2', 'ssprk3'                        |
-| **SOL.useLim**     | Zhang & Shu limiter: 0 ('false'), 1 ('true')                           |
-| **SOL.diffScheme** | diffusion approximation: 'none', d-method-2, d-method-4                |
-|                    |                                  b-method-2, b-method-4                |
-| **SOL.umax**       | maximum solids concentration                                           |
-| **SOL.z**          | mesh nodes in the z-coordinate                                         |
-| **SOL.tsnap**      | time point snapshots                                                   |
-| **SOL.usnap**      | saved snapshots of vector solution u, size nsnap×N                     |
-| **SOL.csnap**      | saved snapshots of vector solution c, size nc×nsnap×N                  |
-| **SOL.ssnap**      | saved snapshots of vector solution s, size ns×nsnap×N                  |
-| **SOL.tw**         | monitored times for min/max values, size nmon                          |
-| **SOL.minu**       | monitored min values of u, size nmon                                   |
-| **SOL.maxu**       | monitored max values of u, size nmon                                   |
-| **SOL.minc**       | monitored min values of c, size nmon                                   | 
-| **SOL.mins**       | monitored min values of s, size nmon                                   |
-| **SOL.sumc**       | monitored sum of c, size nmon                                          |
-| **SOL.U**          | vector of solutions u, last time iteration, size 1×N                   |
-| **SOL.C**          | vector of solutions c, last time iteration, size nc×N                  |
-| **SOL.S**          | vector of solutions s, last time iteration, size ns×N                  | 
-| **SOL.glob**       | structure containing the max and min values of the variables           |
-|---                 |---                                                                     |
+|--- |--- |
+| **SOL.N** | Number of cells |
+| **SOL.T** | ending time |
+| **SOL.dt** | time step |
+| **SOL.nSteps** | total number of time iterations |
+| **SOL.recon** | reconstruction type: 'fo', 'muscl', 'cweno3' |
+| **SOL.rk** | time approximation: 'euler', 'ssprk2', 'ssprk3' |
+| **SOL.useLim** | Zhang & Shu limiter: 0 ('false'), 1 ('true')  |
+| **SOL.diffScheme** | diffusion approximation: 'none', d-method-2, d-method-4 |
+|                    |                                  b-method-2, b-method-4 |
+| **SOL.umax** | maximum solids concentration |
+| **SOL.z** | mesh nodes in the z-coordinate |
+| **SOL.tsnap** | time point snapshots |
+| **SOL.usnap** | saved snapshots of vector solution u, size nsnap×N |
+| **SOL.csnap** | saved snapshots of vector solution c, size nc×nsnap×N |
+| **SOL.ssnap** | saved snapshots of vector solution s, size ns×nsnap×N |
+| **SOL.tw** | monitored times for min/max values, size nmon |
+| **SOL.minu** | monitored min values of u, size nmon |
+| **SOL.maxu** | monitored max values of u, size nmon |
+| **SOL.minc** | monitored min values of c, size nmon | 
+| **SOL.mins** | monitored min values of s, size nmon |
+| **SOL.sumc** | monitored sum of c, size nmon   |
+| **SOL.U** | vector of solutions u, last time iteration, size 1×N |
+| **SOL.C** | vector of solutions c, last time iteration, size nc×N |
+| **SOL.S** | vector of solutions s, last time iteration, size ns×N | 
+| **SOL.glob** | structure containing the max and min values of the variables |
+|--- |--- |
 
 ## Authorship
 
