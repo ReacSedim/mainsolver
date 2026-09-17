@@ -77,8 +77,8 @@ The numerical scheme employed to solve the PDE combines a variety of ingredients
 ### Repositories and organization
 
 The software is organized in three subfolders:
-- **src**: Contains all the ".m" source codes
-- **post-processing**: This is a repository where compressed auxiliary files ...
+- **src**: Contains all the ".m" source codes.
+- **post-processing**: This is a repository where auxiliary scripts used in, for instance, the calculation of numerical errors are stored.
 - **results**: This folder is intended to store all the results obtained from running the simulations; therefore, it is initially empty. 
 
 ### Scripts
