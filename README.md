@@ -91,7 +91,7 @@ Scripts in **scr** subfolder:
 The input data is passed through a structure, which may contain the following fields:
 
 | Field   |  Description  |
-|---               |---                                                           |
+|:---              |:---                                                          |
 | **par.HH**       | vessel height [m]                                            |
 | **par.BB**       | vessel depth  [m]                                            |
 | **par.rho**      | density of solids [kg/m^3]                                   |
