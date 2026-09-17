@@ -86,11 +86,11 @@ The software is organized in three subfolders:
 There are currently 7 source codes in folder **scr**, these are the following:
 - **main_solver.m**: Corresponds to the main source code of the solver, contains the time and spatial loops, calls all the other functions and routines and produces the output structure.
 - **rs_const_functions.m**: Contains all constitutive functions of the model plus some additional functions used in the numerical approximation.
-- **rs_defaults.m**: fill in optional and default fields in the parameters data structure and compute some derived constants. The input in this function is the parameters input data structure and the output is also a parameters input data structure. It is intended to be called before running the main_solver.
-- **rs_diffusive_flux.m**: computes the approximation of the diffusive flux.
-- **rs_ghost.m**: create ghost cells for computing boundary conditions in the extended stencil of the polynomial reconstructions.
-- **rs_initial.m**: computes cell averages of the initial conditions. New initial conditions for u, c and s need to be implemented in this routine.
-- **rs_reconstruct.m**: computes the second-order MUSCL and third-order CWENO reconstructions.
+- **rs_defaults.m**: Fill in optional and default fields in the parameters data structure and compute some derived constants. The input in this function is the parameters input data structure and the output is also a parameters input data structure. It is intended to be called before running the main_solver.
+- **rs_diffusive_flux.m**: Computes the approximation of the diffusive flux.
+- **rs_ghost.m**: Create ghost cells for computing boundary conditions in the extended stencil of the polynomial reconstructions.
+- **rs_initial.m**: Computes cell averages of the initial conditions. New initial conditions for u, c and s need to be implemented in this routine.
+- **rs_reconstruct.m**: Computes the second-order MUSCL and third-order CWENO reconstructions.
 
 ### Running the program
 
