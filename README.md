@@ -100,6 +100,11 @@ SOL = main_solver(N,par)
 
 This Matlab-based solver has been developed by **Julio Careaga** (https://github.com/juliocareaga/) and **Juan Barajas-Calonge** (https://github.com/juanbarajascalonge/).
 
+
+<br>
+<br>
+<br>
+
 ## 🔵 Input data structure
 
 The input data is passed through a structure, which may contain the following fields:
