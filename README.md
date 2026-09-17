@@ -156,7 +156,7 @@ The input data is passed through a structure, that we call here par, which may c
 | par.shat     | s-value used in 'bump' [kg/m^3]                              |
 | par.Tfinal   | final simulation time                                        |
 | par.CFL      | CFL constant                                                 |
-| par.alphaM   | Muscl parameter                                              |
+| par.alphaM   | MUSCL parameter                                              |
 | par.wenoPower| power used in the CWENO method, in the S_K factors           |
 | par.posEps   | epsilon used in the CWENO method, in the S_K factors         |
 | par.useLim   | Zhang-Shu limiter ('true' or 'false')                        |
