@@ -109,10 +109,10 @@ This Matlab-based solver has been developed by **Julio Careaga** (https://github
 
 ## 🔵 Input data structure
 
-The input data is passed through a structure, which may contain the following fields:
+The input data is passed through a structure, that we call here par, which may contain the following fields:
 
 | Field   |  Description  |
-|:---              |:---                                                          |
+|:---              |:---                                                      |
 | par.HH       | vessel height [m]                                            |
 | par.BB       | vessel depth  [m]                                            |
 | par.rho      | density of solids [kg/m^3]                                   |
@@ -160,7 +160,7 @@ The input data is passed through a structure, which may contain the following fi
 
 --------------------------
 ## 🟢 Output data structure
-
+The output data is obtained as a structure, that we call here sol, which contains the following fields:
 
 | Field  |  Description  |
 |:--- |:---    |
