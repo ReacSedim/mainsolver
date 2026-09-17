@@ -67,8 +67,9 @@ where by components, we have:
 
 
 The numerical scheme employed to solve the PDE combines a variety of ingredients:
-- High-order time approximations for ....
-- High-order polynomial reconstructions and maximum-principle limiters.
+- High-order time approximations: strong stability preserving Runge-Kutta method of second and third order.
+- High-order polynomial reconstructions: Monotonic Upstream-centered Scheme for Conservation Laws (MUSCL) method, and Central Weighted Essentially Non-Oscillatory (CWENO) scheme. 
+- Maximum-principle limiters: Zhang & Shu maximum principle and positivity preserving.
 
 --------------------------
 ## 2. Code structure
