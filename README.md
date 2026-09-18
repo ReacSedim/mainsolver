@@ -124,39 +124,39 @@ The input data is passed through a structure, that we call here par, which may c
 
 | Field   |  Description  |
 |:---              |:---                                                      |
-| par.HH       | vessel height $`\tt\color{blue}[m]`$                         |
-| par.BB       | vessel depth  $`\tt\color{blue}[m]`$                         |
-| par.rho      | density of solids $`\tt\color{blue}[kg/m^3]`$                |
-| par.rhoL     | density of liquid $`\tt\color{blue}[kg/m^3]`$                |
+| par.HH       | vessel height $`\rm\color{blue}[m]`$                         |
+| par.BB       | vessel depth  $`\rm\color{blue}[m]`$                         |
+| par.rho      | density of solids $`\rm\color{blue}[kg/m^3]`$                |
+| par.rhoL     | density of liquid $`\rm\color{blue}[kg/m^3]`$                |
 | par.gg       | gravity $`\tt\color{blue}[m/s^2]`$                           |
-| par.v0       | hindered settling velocity at zero concentration $`\tt\color{blue}[m/s]`$ |
-| par.utilde   | parameter used in the Diehl flux function $`\tt\color{blue}[kg/m^3]`$     |
-| par.eta      | parameter used in the Diehl flux function $`\tt\color{blue}[-]`$          |
+| par.v0       | hindered settling velocity at zero concentration $`\rm\color{blue}[m/s]`$ |
+| par.utilde   | parameter used in the Diehl flux function $`\rm\color{blue}[kg/m^3]`$     |
+| par.eta      | parameter used in the Diehl flux function $`\rm\color{blue}[-]`$          |
 | par.umax     | maximum solids concentration $`\tt\color{blue}[kg/m^3]`$                  |
-| par.beta     | parameter used in the compression function $`\tt\color{blue}[-]`$         |
+| par.beta     | parameter used in the compression function $`\rm\color{blue}[-]`$         |
 | par.uc       | critical concentration                                       |
 | par.diffScheme | approximation type of the diffusion/compression terms      |
 | par.Y        | yield constant in the reduced biokinetic model               |
 | par.Ybar     | additional yield constant in the reduced biokinetic model    |
 | par.fp       | portion that decays to non-degradable organics               |
 | par.bdec     | decay rate of heterotrophic organisms $`\tt\color{blue}[1/s]`$ |
-| par.mumax    | maximum growth rate $`\tt\color{blue}[1/s]`$                   |
-| par.k1       | saturation constant $`\tt\color{blue}[kg/m^3]`$              |
-| par.k2       | saturation constant $`\tt\color{blue}[kg/m^3]`$              |
-| par.sigmac   | stoichiometric matrix for the solid components $`\tt\color{blue}[-]`$ |
-| par.sigmas   | stoichiometric matrix for the substrates       $`\tt\color{blue}[-]`$ |
+| par.mumax    | maximum growth rate $`\rm\color{blue}[1/s]`$                   |
+| par.k1       | saturation constant $`\rm\color{blue}[kg/m^3]`$              |
+| par.k2       | saturation constant $`\rm\color{blue}[kg/m^3]`$              |
+| par.sigmac   | stoichiometric matrix for the solid components $`\rm\color{blue}[-]`$ |
+| par.sigmas   | stoichiometric matrix for the substrates       $`\rm\color{blue}[-]`$ |
 | par.feedMode | batch or continuous                                          |
 | par.cfrac    | fraction of initial feed (taken constant; vector)            |
 | par.sf_val   | feed concentration of substrates (taken constant; vector)    |
 | par.bc       |  'transmissive'; gamma == 1 at every face and ghost cells    |
 | par.icType   | type of initial condition: 'jump' or 'bump'                  |
 | par.bumpP    | power used in smooth initial condition                       |
-| par.z0       | z-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,[m]`$ |
-| par.Rm       | radious used in $`\tt\color{#B930E3}"bump"\color{blue}\,[m]`$   |
-| par.ubar     | u-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,[kg/m^3]`$ |
-| par.uhat     | u-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,[kg/m^3]`$ |                              |
-| par.sbar     | s-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,[kg/m^3]`$ |
-| par.shat     | s-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,[kg/m^3]`$ |
+| par.z0       | z-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,\rm[m]`$ |
+| par.Rm       | radious used in $`\tt\color{#B930E3}"bump"\color{blue}\,\rm[m]`$   |
+| par.ubar     | u-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,\rm[kg/m^3]`$ |
+| par.uhat     | u-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,\rm[kg/m^3]`$ |                              |
+| par.sbar     | s-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,\rm[kg/m^3]`$ |
+| par.shat     | s-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,\rm[kg/m^3]`$ |
 | par.Tfinal   | final simulation time                                        |
 | par.CFL      | CFL constant                                                 |
 | par.alphaM   | MUSCL parameter                                              |
@@ -179,11 +179,11 @@ The output data is obtained as a structure, that we call here sol, which contain
 | sol.T          | ending time                                                            |
 | sol.dt         | time step                                                              |
 | sol.nSteps     | total number of time iterations                                        |
-| sol.recon      | reconstruction type: 'fo', 'muscl', 'cweno3'                           |
-| sol.rk         | time approximation: 'euler', 'ssprk2', 'ssprk3'                        |
-| sol.useLim     | Zhang & Shu limiter: 0 ('false'), 1 ('true')                           |
-| sol.diffScheme | diffusion approximation: 'none', d-method-2, d-method-4                |
-|                    |                                  b-method-2, b-method-4            |
+| sol.recon      | reconstruction type: $`\tt\color{#B930E3}"fo"`$, $`\tt\color{#B930E3}"muscl"`$, $`\tt\color{#B930E3}"cweno3"`$|
+| sol.rk         | time approximation: $`\tt\color{#B930E3}"euler"`$, $`\tt\color{#B930E3}"ssprk2"`$, $`\tt\color{#B930E3}"ssprk3"`$ |
+| sol.useLim     | Zhang & Shu limiter: 0 ($`\tt\color{#B930E3}"false`$), 1 ($`\tt\color{#B930E3}"true`$)                           |
+| sol.diffScheme | diffusion approximation: $`\tt\color{#B930E3}"none"`$, $`\tt\color{#B930E3}"d-method-2"`$, $`\tt\color{#B930E3}"d-method-4"`$ |
+|                    |     $`\tt\color{#B930E3}"b-method-2"`$, $`\tt\color{#B930E3}"b-method-4"`$  |
 | sol.umax       | maximum solids concentration                                           |
 | sol.z          | mesh nodes in the z-coordinate                                         |
 | sol.tsnap      | time point snapshots                                                   |
