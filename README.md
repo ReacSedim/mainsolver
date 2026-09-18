@@ -7,12 +7,15 @@ This repository is intended to provide an open source solver for the simulation 
 
 $\color{blue}\texttt{(Current version)}$
 J. Barajas-Calonge, J. Careaga, L.M. Villada. **Invariant-region-preserving high-order schemes for a model of reactive sedimentation**, 
-*ArXiv preprint arXiv:2609.06846*, 2026, [https://arxiv.org/abs/2609.06846](https://arxiv.org/abs/2609.06846)
+*ArXiv preprint arXiv:2609.06846*, 2026, [**link**](https://arxiv.org/abs/2609.06846)
 
-Related paper, with first-order accurate numerical scheme:
+Related papers, with first-order accurate numerical scheme:
 
-R. Bürger, J. Careaga and S. Diehl. **A method-of-lines formulation for a model of reactive settling in tanks with varying cross-sectional area**, 
+- R. Bürger, J. Careaga and S. Diehl. **A method-of-lines formulation for a model of reactive settling in tanks with varying cross-sectional area**, 
 *IMA J. Appl. Math.* 86 (2021), 514-546. [link](https://academic.oup.com/imamat/article-abstract/86/3/514/6278612)
+- R. Bürger, J. Careaga, S. Diehl, C. Mejías, I. Nopens, E. Torfs, P.A. Vanrolleghem. **Simulations of reactive settling of activated sludge with a reduced biokinetic model**,
+*Comput. Chem. Eng.* 92 (2016), 216-229
+
  
 --------------------------
 
