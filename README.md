@@ -162,7 +162,7 @@ The input data is passed through a structure, that we call here par, which may c
 | par.alphaM   | MUSCL parameter                                              |
 | par.wenoPower| power used in the CWENO method, in the S_K factors           |
 | par.posEps   | epsilon used in the CWENO method, in the S_K factors         |
-| par.useLim   | Zhang-Shu limiter ($`\tt\color{#B930E3}"true"`$ true' or $`\tt\color{#B930E3}"false"`$) |
+| par.useLim   | Zhang-Shu limiter ($`\tt\color{#B930E3}"true"`$ or $`\tt\color{#B930E3}"false"`$) |
 | par.nsnap    | number of evenly saved snapshots of the solution             |
 | par.nmon     | number of evenly saved min/max monitored values              |
 | par.dtRule   | type of time step dt: $`\tt\color{#B930E3}"cfl"`$ or $`\tt\color{#B930E3}"speed"`$ |
