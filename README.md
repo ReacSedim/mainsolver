@@ -124,9 +124,9 @@ The input data is passed through a structure, that we call here par, which may c
 
 | Field   |  Description  |
 |:---              |:---                                                      |
-| par.HH       | vessel height $`\tt \color{blue}[m]`$                        |
-| par.BB       | vessel depth  [m]                                            |
-| par.rho      | density of solids [kg/m^3]                                   |
+| par.HH       | vessel height $`\tt\color{blue}[m]`$                         |
+| par.BB       | vessel depth  $`\tt\color{blue}[m]`$                         |
+| par.rho      | density of solids $`\tt\color{blue}[kg/m^3]`$                |
 | par.rhoL     | density of liquid [kg/m^3]                                   |
 | par.gg       | gravity [m/s^2]                                              |
 | par.v0       | hindered settling velocity at zero concentration [m/s]       |
