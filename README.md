@@ -87,7 +87,7 @@ The software is organized in three subfolders:
 ### Scripts
 
 There are currently 7 source codes in folder **scr**, these are the following:
-- $`\color{#076D82}\tt main_solver.m`$: Corresponds to the main source code of the solver, contains the time and spatial loops, calls all the other functions and routines and produces the output structure.
+- $`\color{#076D82}\tt main\_solver.m`$: Corresponds to the main source code of the solver, contains the time and spatial loops, calls all the other functions and routines and produces the output structure.
 - **rs_const_functions.m**: Contains all constitutive functions of the model plus some additional functions used in the numerical approximation.
 - **rs_defaults.m**: Fill in optional and default fields in the parameters data structure and compute some derived constants. The input in this function is the parameters input data structure and the output is also a parameters input data structure. It is intended to be called before running the main_solver.
 - **rs_diffusive_flux.m**: Computes the approximation of the diffusive flux.
