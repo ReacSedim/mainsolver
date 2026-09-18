@@ -127,24 +127,24 @@ The input data is passed through a structure, that we call here par, which may c
 | par.HH       | vessel height $`\tt\color{blue}[m]`$                         |
 | par.BB       | vessel depth  $`\tt\color{blue}[m]`$                         |
 | par.rho      | density of solids $`\tt\color{blue}[kg/m^3]`$                |
-| par.rhoL     | density of liquid [kg/m^3]                                   |
-| par.gg       | gravity [m/s^2]                                              |
-| par.v0       | hindered settling velocity at zero concentration [m/s]       |
-| par.utilde   | parameter used in the Diehl flux function [kg/m^3]           |
-| par.eta      | parameter used in the Diehl flux function [-]                |
-| par.umax     | maximum solids concentration [kg/m^3]                        |
-| par.beta     | parameter used in the compression function [-]               |
+| par.rhoL     | density of liquid $`\tt\color{blue}[kg/m^3]`$                |
+| par.gg       | gravity $`\tt\color{blue}[m/s^2]`$                           |
+| par.v0       | hindered settling velocity at zero concentration $`\tt\color{blue}[m/s]`$ |
+| par.utilde   | parameter used in the Diehl flux function $`\tt\color{blue}[kg/m^3]`$     |
+| par.eta      | parameter used in the Diehl flux function $`\tt\color{blue}[-]`$          |
+| par.umax     | maximum solids concentration $`\tt\color{blue}[kg/m^3]`$                  |
+| par.beta     | parameter used in the compression function $`\tt\color{blue}[-]`$         |
 | par.uc       | critical concentration                                       |
 | par.diffScheme | approximation type of the diffusion/compression terms      |
 | par.Y        | yield constant in the reduced biokinetic model               |
 | par.Ybar     | additional yield constant in the reduced biokinetic model    |
 | par.fp       | portion that decays to non-degradable organics               |
-| par.bdec     | decay rate of heterotrophic organisms [1/s]                  |
-| par.mumax    | maximum growth rate [1/s]                                    |
-| par.k1       | saturation constant [kg/m^3]                                 |
-| par.k2       | saturation constant [kg/m^3]                                 |
-| par.sigmac   | stoichiometric matrix for the solid components [-]           |
-| par.sigmas   | stoichiometric matrix for the substrates       [-]           |
+| par.bdec     | decay rate of heterotrophic organisms $`\tt\color{blue}[1/s]`$ |
+| par.mumax    | maximum growth rate $`\tt\color{blue}[1/s]`$                   |
+| par.k1       | saturation constant $`\tt\color{blue}[kg/m^3]`$              |
+| par.k2       | saturation constant $`\tt\color{blue}[kg/m^3]`$              |
+| par.sigmac   | stoichiometric matrix for the solid components $`\tt\color{blue}[-]`$ |
+| par.sigmas   | stoichiometric matrix for the substrates       $`\tt\color{blue}[-]`$ |
 | par.feedMode | batch or continuous                                          |
 | par.cfrac    | fraction of initial feed (taken constant; vector)            |
 | par.sf_val   | feed concentration of substrates (taken constant; vector)    |
@@ -152,20 +152,20 @@ The input data is passed through a structure, that we call here par, which may c
 | par.icType   | type of initial condition: 'jump' or 'bump'                  |
 | par.bumpP    | power used in smooth initial condition                       |
 | par.z0       | z-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,[m]`$ |
-| par.Rm       | radious used in 'bump' [m]                                   |
-| par.ubar     | u-value used in 'bump' [kg/m^3]                              |
-| par.uhat     | u-value used in 'bump' [kg/m^3]                              |
-| par.sbar     | s-value used in 'bump' [kg/m^3]                              |
-| par.shat     | s-value used in 'bump' [kg/m^3]                              |
+| par.Rm       | radious used in $`\tt\color{#B930E3}"bump"\color{blue}\,[m]`$   |
+| par.ubar     | u-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,[kg/m^3]`$ |
+| par.uhat     | u-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,[kg/m^3]`$ |                              |
+| par.sbar     | s-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,[kg/m^3]`$ |
+| par.shat     | s-value used in $`\tt\color{#B930E3}"bump"\color{blue}\,[kg/m^3]`$ |
 | par.Tfinal   | final simulation time                                        |
 | par.CFL      | CFL constant                                                 |
 | par.alphaM   | MUSCL parameter                                              |
 | par.wenoPower| power used in the CWENO method, in the S_K factors           |
 | par.posEps   | epsilon used in the CWENO method, in the S_K factors         |
-| par.useLim   | Zhang-Shu limiter ('true' or 'false')                        |
+| par.useLim   | Zhang-Shu limiter ($`\tt\color{#B930E3}"true"`$ true' or $`\tt\color{#B930E3}"false"`$) |
 | par.nsnap    | number of evenly saved snapshots of the solution             |
 | par.nmon     | number of evenly saved min/max monitored values              |
-| par.dtRule   | type of time step dt: 'cfl' or 'speed'                       |
+| par.dtRule   | type of time step dt: $`\tt\color{#B930E3}"cfl"`$ or $`\tt\color{#B930E3}"speed"`$ |
 | par.sameDt   | same rule (w_1 = 1/6) for all three reconstructions          |
 
 
