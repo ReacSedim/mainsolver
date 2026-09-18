@@ -124,7 +124,7 @@ The input data is passed through a structure, that we call here par, which may c
 
 | Field   |  Description  |
 |:---              |:---                                                      |
-| par.HH       | vessel height [m]                                            |
+| par.HH       | vessel height $`\tt \color{blue}[m]`$                        |
 | par.BB       | vessel depth  [m]                                            |
 | par.rho      | density of solids [kg/m^3]                                   |
 | par.rhoL     | density of liquid [kg/m^3]                                   |
@@ -151,7 +151,7 @@ The input data is passed through a structure, that we call here par, which may c
 | par.bc       |  'transmissive'; gamma == 1 at every face and ghost cells    |
 | par.icType   | type of initial condition: 'jump' or 'bump'                  |
 | par.bumpP    | power used in smooth initial condition                       |
-| par.z0       | z-value used in 'bump' [m]                                   |
+| par.z0       | z-value used in $`\tt \color{#B930E3}'bump' [m]`$            |
 | par.Rm       | radious used in 'bump' [m]                                   |
 | par.ubar     | u-value used in 'bump' [kg/m^3]                              |
 | par.uhat     | u-value used in 'bump' [kg/m^3]                              |
