@@ -13,7 +13,7 @@ Related papers, with first-order accurate numerical scheme:
 
 - R. Bürger, J. Careaga and S. Diehl. **A method-of-lines formulation for a model of reactive settling in tanks with varying cross-sectional area**, 
 *IMA J. Appl. Math.* 86 (2021), 514-546. [**link**](https://academic.oup.com/imamat/article-abstract/86/3/514/6278612)
-- R. Bürger, J. Careaga, S. Diehl, C. Mejías, I. Nopens, E. Torfs, P.A. Vanrolleghem. **Simulations of reactive settling of activated sludge with a reduced biokinetic model**,
+- R. Bürger, J. Careaga, S. Diehl, C. Mejías, I. Nopens, E. Torfs and P.A. Vanrolleghem. **Simulations of reactive settling of activated sludge with a reduced biokinetic model**,
 *Comput. Chem. Eng.* 92 (2016), 216-229, [**link**](https://www.sciencedirect.com/science/article/abs/pii/S0098135416301338#aep-article-footnote-id12)
 
  
